@@ -3,6 +3,7 @@ environment_variables:
     plaintext:
         S3_BUCKET: "ambit-ui"
         BUILD_ENV: "prod"
+        CDN_DISTRIBUTION_ID: "E3APKYF5PI31N3"
 phases:
     install:
         commands:
