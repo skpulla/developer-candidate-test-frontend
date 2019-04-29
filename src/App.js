@@ -22,9 +22,6 @@ import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import FilterListIcon from '@material-ui/icons/FilterList';
-import SimpleTable from './components/SimpleTable.js';
-import EnhancedTable from './components/EnhancedTable.js';
-import NewEnhancedTable from './components/NewEnhancedTable.js';
 import MUIDataTable from './components/MUIDataTable.js';
 
 
