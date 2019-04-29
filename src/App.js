@@ -109,7 +109,7 @@ class App extends React.Component {
       'Below 30': '?age[lt]=30'
     }
 
-    let url = process.env.REACT_APP_API_PEOPLE_URL + filterUrlParams[this.state.filter];
+    let url = process.env.REACT_APP_API_PEOPLE_URL + (filterUrlParams[this.state.filter] || '' );
     fetch(url)
       .then(res => res.json())
       .then(people => this.setState({ 'people': people }))
