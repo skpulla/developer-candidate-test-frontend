@@ -22,6 +22,7 @@ import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import FilterListIcon from '@material-ui/icons/FilterList';
+import {API_PEOPLE_URL} from './config/api-config.js';
 import MUIDataTable from './components/MUIDataTable.js';
 
 
@@ -109,7 +110,7 @@ class App extends React.Component {
       'Below 30': '?age[lt]=30'
     }
 
-    let url = process.env.REACT_APP_API_PEOPLE_URL + (filterUrlParams[this.state.filter] || '' );
+    let url = (API_PEOPLE_URL || process.env.REACT_APP_API_PEOPLE_URL) + (filterUrlParams[this.state.filter] || '' );
     fetch(url)
       .then(res => res.json())
       .then(people => this.setState({ 'people': people }))
