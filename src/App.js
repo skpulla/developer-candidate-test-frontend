@@ -196,14 +196,6 @@ class App extends React.Component {
                 </ListItem>
               ))
             }
-
-          </List>
-          <Divider />
-          <List>
-            <ListItem button key='Filter'>
-              <ListItemIcon><FilterListIcon /></ListItemIcon>
-              <ListItemText primary='Filter' />
-            </ListItem>
           </List>
         </Drawer>
         <main className={classes.content}>
